@@ -1,6 +1,6 @@
-Manna Kong
-
 # No More Coding Headaches: Getting straight to Application Creation with the Joget DX Operator on OpenShift
+
+May 1, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/bG3Hzof.jpg)
 
@@ -12,7 +12,7 @@ Joget DX is a platform that enables people who aren't experienced coders to crea
 
 The Joget DX Operator is a tool that helps people easily manage and use the Joget DX low-code application platform on Kubernetes clusters. It automates the process of installing, configuring, scaling, and upgrading Joget DX. This helps users focus on building and deploying their applications instead of having to deal with the complicated parts of Kubernetes. It's like having a helpful assistant that takes care of the technical details so people can focus on what they want to create.
 
-#### What is an [Operator](https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/#:~:text=K8s%20Operators%20are%20controllers%20for,Custom%20Resource%20Definitions%20(CRD).)?
+### What is an [Operator](https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/#:~:text=K8s%20Operators%20are%20controllers%20for,Custom%20Resource%20Definitions%20(CRD).)?
 
 An operator is a special kind of Kubernetes controller with application-specific knowledge that manages a custom resource. It extends the functionality of the Kubernetes API to create, configure, and manage instances of complex applications based off of the specifications created by the user. This means that people can use operators to manage complex applications more easily and efficiently, without having to worry about the technical details of managing the application themselves.
 
