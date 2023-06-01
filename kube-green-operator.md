@@ -3,13 +3,13 @@ May 21, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/nvcP5iT.jpg)
 
-### What is [kube-green](https://kube-green.dev/)?
+### Sustainability in Cloud Technology
+
+OpenShift Kepler...
+
+### What is [kube-green](https://kube-green.dev/) and what is the [kube-green operator](https://github.com/kube-green/kube-green)?
 
 The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down some of your resources when you don't need them at designed times that you define. 
-
-### What is the [kube-green operator](https://github.com/kube-green/kube-green)?
-
-
 
 ### What is an [Operator](https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/#:~:text=K8s%20Operators%20are%20controllers%20for,Custom%20Resource%20Definitions%20(CRD).)?
 
