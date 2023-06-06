@@ -3,6 +3,10 @@ June 6, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/nvcP5iT.jpg)
 
+## What is the [kube-green operator](https://kube-green.dev/)?
+
+So, what is the kube-green operator? An operator to reduce CO2 footprint of your clusters. The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down and starts up some of your resources at designed times when you don't need them. The resources currently supported are Deployments and CronJobs. So, the kube-green operator suspends resources during off-hours to help reduce CO2 emission, why is this imporant?
+
 ## Sustainability in Cloud Technology
 
 Out of the world's population of seven billion people, around 4.66 billion individuals are active internet users. However, it's important to recognize that everything we do online, from sending emails and playing games to storing data, requires energy and contributes to energy consumption. Shockingly, technology accounts for a staggering 1.6 billion tons of greenhouse gas emissions.
@@ -10,10 +14,6 @@ Out of the world's population of seven billion people, around 4.66 billion indiv
 Consider this: in just one year, the energy consumed by a single email inbox is enough to power 40 light bulbs for an hour. Furthermore, the collective usage of emails worldwide is equivalent to the carbon dioxide emissions of 7 million cars. As the demand for technology increases, data centers have seen their energy usage rise by 10-30% annually, contributing to approximately 1.5% of global energy consumption.
 
 To say that technology plays a crucial role in driving more sustainable initiatives is an understatement.
-
-## What is the [kube-green operator](https://kube-green.dev/)?
-
-So, what is the kube-green operator? An operator to reduce CO2 footprint of your clusters. The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down and starts up some of your resources at designed times when you don't need them. The resources currently supported are Deployments and CronJobs. 
 
 ## What is an [Operator](https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/#:~:text=K8s%20Operators%20are%20controllers%20for,Custom%20Resource%20Definitions%20(CRD).)?
 
