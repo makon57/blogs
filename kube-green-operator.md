@@ -1,4 +1,4 @@
-# Keeping the Cloud Green with the Kube-Green Operator on OpenShift
+# Keeping the Cloud Green with the kube-green Operator on OpenShift
 June 6, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/nvcP5iT.jpg)
@@ -70,7 +70,9 @@ SleepInfo can easily be changed and adjusted accordingly to your needs and sched
 
 ## Conclusion
 
-kube-green is working on something great as sustainability in technology grows to be a more prominent concern in the community. Keeping the cloud green as we continue to develop more innovative technology is essential to longevity as we pioneer to the forfront of technology. Limitting the usage and energy consumption of our tools, workflow, storage, and resources are steps that will help us continue to keep our work clean and the world green. Checkout the [Kepler](https://next.redhat.com/project/kepler/) project at Red Hat to find out what other initivaes we are taking to save energy and create a cloud community that promotes sustainable technology and consciousness. Keep an eye out as kube-green continues to develop more support for other resources and as they create a Green Dashboard for you to keep track of your cluster's CO2 emissions. If you'd like to help contriubte to there code, check out their [codebase](https://github.com/kube-green/kube-green).
+kube-green is actively working on a remarkable initiative as sustainability in technology becomes an increasingly prominent concern within the community. Ensuring the "greenness" of the cloud as we forge ahead with innovative technologies is crucial for long-term success and progress at the forefront of the industry. By reducing the usage and energy consumption of our tools, workflows, storage, and resources, we can take important steps toward keeping our work clean and the world green.
+
+Checkout Project [Kepler](https://cloud.redhat.com/blog/a-view-of-sustainability-in-openshift-with-project-kepler) at Red Hat to find out what other initivaes we are taking to save energy and create a cloud community that promotes sustainable technology and consciousness. Additionally, stay tuned as kube-green expands its support for other resources and develops a Green Dashboard that enables you to monitor your cluster's CO2 emissions. If you're interested in contributing to their code, be sure to explore their [codebase](https://github.com/kube-green/kube-green).
 
 ## Additional Resources
 
