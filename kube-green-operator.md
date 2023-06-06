@@ -3,10 +3,6 @@ June 6, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/nvcP5iT.jpg)
 
-## What is the [kube-green operator](https://kube-green.dev/)?
-
-So, what is the kube-green operator? An operator to reduce CO2 footprint of your clusters. The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down and starts up some of your resources at designed times when you don't need them. The resources currently supported are Deployments and CronJobs. So, the kube-green operator suspends resources during off-hours to help reduce CO2 emission, why is this imporant?
-
 ## Sustainability in Cloud Technology
 
 Out of the world's population of seven billion people, around 4.66 billion individuals are active internet users. However, it's important to recognize that everything we do online, from sending emails and playing games to storing data, requires energy and contributes to energy consumption. Shockingly, technology accounts for a staggering 1.6 billion tons of greenhouse gas emissions.
@@ -15,13 +11,9 @@ Consider this: in just one year, the energy consumed by a single email inbox is 
 
 To say that technology plays a crucial role in driving more sustainable initiatives is an understatement.
 
-## What is an [Operator](https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/#:~:text=K8s%20Operators%20are%20controllers%20for,Custom%20Resource%20Definitions%20(CRD).)?
+## What is the [kube-green operator](https://kube-green.dev/)?
 
-An operator is a Kubernetes-native application that extends the capabilities of Kubernetes' controller concept. It consists of three components: a controller, a custom resource, and application knowledge. Operators are responsible for managing the lifecycle of your application and can be configured to oversee all aspects of it. While all operators are controllers, not all controllers are operators. To be considered an operator, a controller should incorporate some aspect of these three components.
-
-Unlike Kubernetes' built-in resources and controllers, operators are specifically designed to handle stateful applications that require ongoing maintenance. To create an operator, a custom resource must be defined, and the custom controller will monitor it within its control loop. The control loop works to reconcile the current state of the application with the state declared in the custom resource definition. The custom resource definition contains application-specific knowledge, and the controller handles the entire process to ensure consistency.
-
-To learn more about operators, you can explore the operator framework by visiting this [link](https://operatorframework.io/).
+The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down and starts up some of your resources at designed times when you don't need them. It suspends resources during off-hours to help reduce CO2 emission. The resources currently supported are Deployments and CronJobs.
 
 ## What are the benefits and use cases for using the kube-green operator?
 
