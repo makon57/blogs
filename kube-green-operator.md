@@ -1,23 +1,35 @@
 # Keeping the Cloud Green with the Kube-Green Operator on OpenShift
-May 21, 2023 | By Manna Kong
+June 6, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/nvcP5iT.jpg)
 
 ## Sustainability in Cloud Technology
 
-Of the seven billion people on earth, 4.66 billion are active internet users. Everything we do online requires energy and consumes energy from emails, games, data storage, and more. Technology makes up 1.6 billion tons of greenhouse gas emission. In a year, one email inbox consumes enough energy to light 40 light bulbs for one hour. The world's usage of emails can generate 7 million cars worth of carbon dioxide. To handle increasing workloads, data centers have increased their energy usage by 10-30% a year which accounts for about 1.5% of global energy consumption. To say that technology is an important factor for more sustainable initatives is an understatement.
+Out of the world's population of seven billion people, around 4.66 billion individuals are active internet users. However, it's important to recognize that everything we do online, from sending emails and playing games to storing data, requires energy and contributes to energy consumption. Shockingly, technology accounts for a staggering 1.6 billion tons of greenhouse gas emissions.
 
-## What is [kube-green](https://kube-green.dev/) and what is the [kube-green operator](https://github.com/kube-green/kube-green)?
+Consider this: in just one year, the energy consumed by a single email inbox is enough to power 40 light bulbs for an hour. Furthermore, the collective usage of emails worldwide is equivalent to the carbon dioxide emissions of 7 million cars. As the demand for technology increases, data centers have seen their energy usage rise by 10-30% annually, contributing to approximately 1.5% of global energy consumption.
 
-So, what is the kube-green operator? An operator to reduce CO2 footprint of your clusters. The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down some of your resources when you don't need them at designed times that you define.
+To say that technology plays a crucial role in driving more sustainable initiatives is an understatement.
+
+## What is the [kube-green operator](https://kube-green.dev/)?
+
+So, what is the kube-green operator? An operator to reduce CO2 footprint of your clusters. The kube-green operator is an operator that helps reduce the CO2 footprint of your clusters. It is a k8s addon that automatically shuts down and starts up some of your resources at designed times when you don't need them. The resources currently supported are Deployments and CronJobs. 
 
 ## What is an [Operator](https://www.cncf.io/blog/2022/06/15/kubernetes-operators-what-are-they-some-examples/#:~:text=K8s%20Operators%20are%20controllers%20for,Custom%20Resource%20Definitions%20(CRD).)?
 
-An operator is a Kubernetes native application that extends the capabilities of Kubernete's controller concept. It can be broken down into three components, controller, custome resource, and application knowledge. Operators manage the lifecycle of yoru application and can be configured to oversee it all. An operator is a controller but not all controllers are operators. In this sense, for a controller to be considered an operator it should contain some aspect of those three components. Kubernetes' built-in resources and controllers have no regard for stateful applications while operators are created to manage complex applications that do require the mantainence of state. To create an operator, there must be a custom resource in which the custom controller is watching within its control loop. The control loop then works to reconcile with current state of the applicaiton with the state declared in the custom resource definition. Application specific knowledge is embedded in the custom resource definition and the controller handles it all so that their likeness may be the same. To learn more about operators, checkout the operator framework [here](https://operatorframework.io/).
+An operator is a Kubernetes-native application that extends the capabilities of Kubernetes' controller concept. It consists of three components: a controller, a custom resource, and application knowledge. Operators are responsible for managing the lifecycle of your application and can be configured to oversee all aspects of it. While all operators are controllers, not all controllers are operators. To be considered an operator, a controller should incorporate some aspect of these three components.
+
+Unlike Kubernetes' built-in resources and controllers, operators are specifically designed to handle stateful applications that require ongoing maintenance. To create an operator, a custom resource must be defined, and the custom controller will monitor it within its control loop. The control loop works to reconcile the current state of the application with the state declared in the custom resource definition. The custom resource definition contains application-specific knowledge, and the controller handles the entire process to ensure consistency.
+
+To learn more about operators, you can explore the operator framework by visiting this [link](https://operatorframework.io/).
 
 ## What are the benefits and use cases for using the kube-green operator?
 
-During normal business hours, the cluster and resources would be running regularly, but outside of that, the kube-green operator would shut down the resources and reduce the workload. kube-green supports Deployments and CronJobs currently so its best usage is when Deployments and CronJobs should be suspended when they are not needed during off hours. The benefit of kube-green is that it saves resources, energy from the enviornment and money for organizations. Some [adopters](https://kube-green.dev/docs/adopters/) of the kube-green operator have seen significant savings in their monthly cloud costs which declined 30-40%. This also saves devs time needed to maintain weekend and evening clusters that aren't being utilized. 
+During regular business hours, clusters and resources operate normally, however, outside of those hours, the kube-green operator shuts down the resources and reduces the workload. kube-green currently supports Deployments and CronJobs, making it ideal for suspending these resources when they are not needed during off hours. The key benefit of using kube-green is its ability to save resources, energy, and money for organizations.
+
+Several [adopters](https://kube-green.dev/docs/adopters/) of the kube-green operator have reported significant savings in their monthly cloud costs, with reductions of 30-40%. Additionally, kube-green eliminates the need for developers to spend time maintaining idle clusters during weekends and evenings when they are not being utilized.
+
+By optimizing resource usage and reducing unnecessary energy consumption, kube-green offers tangible benefits to both the environment and organizations.
 
 ## Installing kube-green operator on [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)
 
@@ -59,6 +71,13 @@ SleepInfo can easily be changed and adjusted accordingly to your needs and sched
 ## Conclusion
 
 kube-green is working on something great as sustainability in technology grows to be a more prominent concern in the community. Keeping the cloud green as we continue to develop more innovative technology is essential to longevity as we pioneer to the forfront of technology. Limitting the usage and energy consumption of our tools, workflow, storage, and resources are steps that will help us continue to keep our work clean and the world green. Checkout the [Kepler](https://next.redhat.com/project/kepler/) project at Red Hat to find out what other initivaes we are taking to save energy and create a cloud community that promotes sustainable technology and consciousness. Keep an eye out as kube-green continues to develop more support for other resources and as they create a Green Dashboard for you to keep track of your cluster's CO2 emissions. If you'd like to help contriubte to there code, check out their [codebase](https://github.com/kube-green/kube-green).
+
+## Additional Resources
+
+- [Technology's Carbon Footprint by Natasha Matta (Medium)](https://medium.com/environmental-justice-coalition/technologys-carbon-footprint-2ead6e5eef7)
+- [The Carbon Emissions of Big Tech by Rodrigo Navarro (ElectronicsHub](https://www.electronicshub.org/the-carbon-emissions-of-big-tech/)
+- [Intro to kube-green by Davide Bianchi (creator of kube-green)](https://kube-green.dev/blog/welcome-blog-post/)
+- [thanks in advance (interactive slide on technology's effect on the enviornment)](https://thanks-in-advance.com/)
 
 ## Appendix
 
