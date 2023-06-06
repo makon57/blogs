@@ -35,7 +35,7 @@ By optimizing resource usage and reducing unnecessary energy consumption, kube-g
 
 _Note: This demo assumes you have an OpenShift cluster available and ready, and that you have the Joget DX Operator installed and running. If you haven't already, follow this [blog](https://cloud.redhat.com/blog/no-more-coding-headaches-getting-straight-to-application-creation-with-the-joget-dx-operator-on-openshift) to install the Joget DX operator to follow along with this demonstration._
 
-#### Step 1: Install the Joget DX Operator on OpenShift
+#### Step 1: Install the kube-green operator on OpenShift
 - Search for "kube-green" in _Operators > OperatorHub_ in the OpenShift Container Platform Console.
 - Install the kube-green operator (Note: kube-green is only available as an all-namespaces operator in the 'openshift-operators' namespace and cannot be installed in specific namespaces.)
 
