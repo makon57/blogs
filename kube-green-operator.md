@@ -1,5 +1,5 @@
 # Keeping the Cloud Green with the kube-green Operator on OpenShift
-June 6, 2023 | By Manna Kong
+June 8, 2023 | By Manna Kong
 
 ![](https://i.imgur.com/nvcP5iT.jpg)
 
