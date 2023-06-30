@@ -1,3 +1,5 @@
+# Installing the GitLab Operator on OpenShift
+
 July 3, 2023 | By Matthias Goerens, Edmund Ochieng, & Manna Kong
 
 <!-- ###### tags: EXE Blog Template *(optional)* -->
