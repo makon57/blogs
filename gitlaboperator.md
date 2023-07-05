@@ -123,7 +123,8 @@ An operator refers to a Kubernetes native application that expands upon the cont
     oc -n gitlab-system get secrets gitlab-gitlab-initial-root-password -o yaml | yq e '.data.password' -  | base64 -d
     ```
     ![](https://i.imgur.com/1Am7B3O.png)
-    
+
+These instructions have  been verified to be working on the current GitLab supported OpenShift cluster versions, specifically v4.9 through v4.11 at the time of writing of this blog.
 
 ## Conclusion
 
