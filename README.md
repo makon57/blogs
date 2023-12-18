@@ -1,1 +1,1 @@
-# A Collection of Blogs created and curated by me!
+# A Collection of Blogs about Certified & Community Operators 
